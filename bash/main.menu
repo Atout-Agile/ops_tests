@@ -1,0 +1,1 @@
+clean temp folder, rm -rf $CC_SCRIPT_FOLDER/$CC_TEMP_FOLDER,run

@@ -1,0 +1,7 @@
+#!/bin/bash
+source ./.env
+source $CC_SCRIPT_PATH/lib.sh
+echo "sourced"
+
+envsubst < $CC_SCRIPT_PATH/main.menu > $CC_SCRIPT_PATH/tmp.menu
+bash_menu $CC_SCRIPT_PATH/tmp.menu
