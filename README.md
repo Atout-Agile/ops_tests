@@ -24,7 +24,8 @@ pwd
 - Copy the output of the previous command as `CC_SCRIPT_PATH` value.
 - save your `.env` file
 
-## FIX THE BUG
+## FIX THE BASH BUG
+Files of this exercise are in the /bash folder.
 
 When I last executed this script, I lost all my home folders.
 
@@ -47,42 +48,30 @@ cd <repo folder>
 ~~~
 
 
-# PRODUCT OWNER HAS QUESTIONS 
+# TOMCAT DEPLOYMENT
 
-Provide synthetic answers to the following requests from the product owner.
-You may use any tools / editor / format you wish to use.
-Please write in English.
-
-## QUESTION ONE
-Some of our services  are deployed on Heroku, 
-some are deployed on our kubernetes cluster in AWS Cloud,
-others are deployed on bare metal server at OVH or 3DS-Outscale.
-
-Each kind has its own deployment process.
-Depending on the project deployment process,the manager for deployment varies.
-It may be a developper, a website manager, or the devops.
-I can not change deployment responsabilities. 
-I need to reinforce our security practices.
-
-What are the first three security measures you consider we should be 
-implementing for everyone to follow ?
-
-Please justify your choices and list the tasks to put these suggestions 
-into motion.
-
-__Note :__  Feel free to make assumptions.
-Please try to list them as they come by.
-
-## QUESTION TWO  
-We have a self managed  kubernetes cluster hosted on AWS.
-According to your own experience, detail at most three options you consider 
-best to scale the workers nodes ?
-Establish a basic comparison between those options to help the team decide 
-wich is best.
+The goal of this exercise is to automate the deployment of tomcat with Ansible 
+and test the deployment in a container.
+ 
+ - Write an ansible tomcat_deploy.yml playbook to install a tomcat server with 
+   the following parameters :
+   - Tomcat version : 8
+   - JVM Max heap size depending on environment :
+   ~~~
+   DEV: 256Mo
+   PROD: 512Mo
+   ~~~
+ - Deploy "sample.war"
+ - Write a short "tomcat_deploy.sh" (less than 10 lines) to test 
+   ansible configuration in a docker container. This script should :
+   - build the test container from the Dockerfile contained in /tomcat_deploy
+   - launch the container and execute it from tomcat_test.sh (already present)
+     to execute the playbook and launch a set of tests.
 
 
-__Note :__ Feel free to make assumptions.
-Please try to list them as they come by.
+# SUBSIDIARY QUESTION
+
+What would you reproach to this test ? 
 
 # How to answer to this test
 
