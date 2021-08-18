@@ -30,7 +30,7 @@ Files of this exercise are in the /bash folder.
 When I last executed this script, I lost all my home folders.
 
 Since then, I tried to fix it. Here is latest version.
-Obviously, it stil has a bug.
+Obviously, it still has a bug.
 
 Your task is to fix and make it production ready.
 
