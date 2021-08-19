@@ -33,9 +33,9 @@ When I last executed this script, I lost all my home folders.
 Since then, I tried to fix it. Here is latest version.
 Obviously, it still has a bug.
 
-Your task is to fix and make it production ready.
-
-
+Your task is to : 
+ - fix it 
+ - make it production ready.
 
 
 :warning: **WARNING**  As mentioned in the exercise, this is a DANGEROUS script.
