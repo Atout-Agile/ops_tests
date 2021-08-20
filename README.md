@@ -1,14 +1,10 @@
-# BASH TEST
+# 1 - BASH TEST
 
+The purpose of this exercise is to debug a buggy bash script.
 
-:warning: **WARNING**  As mentioned in the exercise, this is a DANGEROUS script.
+:warning: **WARNING**  This script contains a DANGEROUS script.
 
 :warning: DO NOT EXECUTE IT. 
-
-:warning: ATTENTION : Comme mentionné dans l'exercice, il s'agit d'un script dangereux.
-
-:warning: NE L'EXECUTEZ PAS.
-
 
 
 ## Installation 
@@ -25,39 +21,30 @@ pwd
 - Copy the output of the previous command as `CC_SCRIPT_PATH` value.
 - save your `.env` file
 
-## FIX THE BASH BUG
+## Fix the Bash Bug
 Files of this exercise are in the /bash folder.
 
 When I last executed this script, I lost all my home folders.
 
 Since then, I tried to fix it. Here is latest version.
-Obviously, it still has a bug.
 
-Your task is to : 
- - fix it 
- - make it production ready.
-
-
-:warning: **WARNING**  As mentioned in the exercise, this is a DANGEROUS script.
-
-:warning: DO NOT EXECUTE IT. 
-
-:warning: ATTENTION : Comme mentionné dans l'exercice, il s'agit d'un script dangereux.
-
-:warning: NE L'EXECUTEZ PAS.
-
-To start the script : 
+Obviously, it still has a bug. Your tasks are to :
+- fix it 
+- make it production ready so it can be used by typing : 
 
 ~~~
 cd <repo folder>
 ./menu
 ~~~
 
+:warning: **WARNING**  As mentioned in the exercise, this is a DANGEROUS script.
 
-# TOMCAT DEPLOYMENT
+:warning: DO NOT EXECUTE IT. 
 
-The goal of this exercise is to automate the deployment of tomcat with Ansible 
-and test the deployment in a container.
+
+# 2 - TOMCAT DEPLOYMENT
+
+The goal of this exercise is to automate the deployment of tomcat with Ansible and test the deployment in a container.
  
  - Write an ansible tomcat_deploy.yml playbook to install a tomcat server with 
    the following parameters :
@@ -83,7 +70,7 @@ and test the deployment in a container.
 
 # SUBSIDIARY QUESTION
 
-What would you reproach to this test ? 
+What do you think about this test ? 
 
 # How to answer to this test
 - This excercise has been tested with docker **1.13.1**. If you use different version, do make it clear.
